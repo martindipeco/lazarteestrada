@@ -1,0 +1,76 @@
+<!--proyecto c-a-c : farmacia poison en av.constituyentes, caba , fanpage -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--to make compatible with i explorer-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- full width-->
+        <title>Flores y Ramos contacto</title>
+        <script src="./js/index.js"></script>
+        <link rel="icon" type="image/ico" href="./assets/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+        <!--Bootstrap link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="STYLESHEET" href="./css/styles.css">
+        <!--<script src="https://use.fontawesome.com/b15bd11953.js"></script>-->
+    </head>
+    <body>
+        <div class="grid-reg">
+            <!--Responsive navigation menu-->
+            <div class="nav-bar-resp" id="my-nav-bar">
+                <a href="./index.html" class="active">Inicio</a>
+                <a href="./productos.html">Productos</a>
+                <a href="./novedades.html">Novedades</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./filosofia.html">Filosofía</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <main id="principal">
+                <div class="sub-grid-text">
+                    <h1>Dejanos tu mensaje</h1>
+                    <h3>Por favor, completá los campos con <strong>*</strong></h3>
+                    <div class="banner" id="whapp">
+                        <a href="https://wa.me/5491140868055" target="_blank">
+                            <!--WhatsApp icon by https://icons8.com-->
+                            <img class="whatsapp" src="./assets/icons8-whatsapp.svg">Hacé tu pedido por whatsapp</a> 
+                    </div>
+                    <br><br>
+                    <form action="" method="GET" id="registro" name="registro">
+                        <div class="form-box">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="*" maxlength="15" required autofocus>
+                        </div>
+                        <div class="form-box">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" placeholder="*" maxlength="30" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="fono">Número de teléfono</label>
+                            <input type="text" name="telefono" id="telefono" maxlenght="20">
+                        </div>
+                        <div class="form-box">
+                            <label for="comentarios">Deja aquí tu mensaje...</label>
+                            <br>
+                            <textarea name="comentario" id="comentario" maxlength="260"></textarea>
+                        </div>
+                        <div class="form-box">
+                            <input type="submit" id="check" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <br><br>
+            </main>
+        </div>
+        <!--Bootstrap link-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!--JavaScript Form-->
+        <script src="./js/form.js"></script>
+    </body>
+</html>
